@@ -36,192 +36,16 @@
     <!-- css reset -->
     <link rel="stylesheet" href="./css/reset.css">
     <title>indigo</title>
+    <!-- 데스크탑 스타일 -->
+    <link rel="stylesheet" href="./css/desktop.css">
 
     <style>
-        .clearfix::after
-        {
-            content:'';
-            display:block;
-            clear:both;
         
-        }
-        :root
-        {
-            font-family: 'Noto Sans KR',sans-serif;
-            font-weight:400;
-            font-size:16px;
-            line-height:29px;
-            color:#616161;
-        }
 
-        .container
-        {
-            width:1132px;
-            margin:0 auto;
-        }
 
-        .full-container
-        {
-            width:100%;
-        }
-
-        h1,h2,h3
-        {
-            font-size:26px;
-            color:#3f51b5;
-            text-transform:uppercase;
-        }
-
-        h2
-        {
-            font-size:42px;
-        }
-
-        h3
-        {
-            font-size:16px;
-        }
-
-        .hidden-tit
-        {
-            height:0;
-            overflow: hidden;
-        }
-
-        .sec
-        {
-            margin-bottom:120px;
-        }
-
-        /* 스킵메뉴 스타일 */
-        .skip-menu a
-        {
-            position:fixed;
-            left:0;
-            top:-100px;
-            z-index:10000;
-            
-            padding:10px 20px;
-            background-color: #616161;
-            font-size:1.4em;
-            color:#fff;
-        }
-        .skip-menu a:focus
-        {
-            top:0;
-        }
-
-        .wrap
-        {
-            overflow:hidden;
-        }
-
-        /* 헤드스타일 */
-        .header
-        {
-            position:fixed;
-            left:0;
-            right:0;
-            top:0;
-            z-index:1000;
-            
-            padding:24px 52px;
-            background-color: #fff;
-
-        }
-
-    
-        .header .container h1
-        {
-            float:left;
-        }
-
-        .header .container nav
-        {
-            float:right;
-        }
         
-        .header .container nav ul li
-        {
-            display:inline-block;
-            text-transform:uppercase;
-            margin-left:22px;
-            color:#3f51b5;
-        }
 
-        /* 헤드스타일 끝 */
-     
-        /* slider스타일 */
-        .slider
-        {
-            position:relative;
-            z-index:900;
-            margin-top:77px;
-
-        }
-       .bx-controls-direction
-       {
-           display:none;
-       } 
-       .bx-pager.bx-default-pager
-       {
-           bottom:30px;
-       }
-
-       
-       .bx-wrapper .bx-pager.bx-default-pager a:focus
-       {
-        background-color: #3f51b5;
-       }
-       .bx-wrapper .bx-pager.bx-default-pager a.active
-       {
-        background-color: #3f51b5;
-       }
-       .bx-wrapper .bx-pager.bx-default-pager a:hover
-       {
-        background-color: #3f51b5;
-       }
-       
-       .bx-wrapper
-       {
-           margin-bottom:0;
-           box-shadow:none;
-           border:none;
-       }
-
-        /* slider 끝 */
         
-        /* we are 스타일 */
-        .we-are h2
-        {
-            float:left;
-            margin-right:20px;
-            border-right:2px solid #616161;
-            width:484px;
-        }
-        .we-are>.container>p
-        {
-            float:left;
-            width:628px;
-        }
-        .we-are ul
-        {
-            float:left;
-        }
-
-        .we-are li
-        {
-            float:left;
-            width:268px;
-            margin-right:20px;
-        }
-
-        .we-are li:last-child
-        {
-            margin-right:0;
-        }
-        
-       
         
     </style>
 
@@ -280,12 +104,13 @@
                     WE ARE
                 </h2>
                 <p>
-                    Contraty to poular belief, Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quam veniam consectetur temporibus assumenda quos. Vel dicta repellat quibusdam in impedit tempora possimus magni?
+                    Contraty to poular belief, Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quam veniam consectetur temporibus assumenda quos.
                 </p>
             
                 <ul class="clearfix">
                     <li>
-                        <div class="ico-box"><img src="./images/ico-pro01.jpg" alt="home"></div>
+                        
+                        
                         <h3>
                             HOME
                         </h3>
@@ -294,7 +119,7 @@
                         </p>
                     </li>
                     <li>
-                        <div class="ico-box"><img src="./images/ico-pro02.jpg" alt="we are"></div>
+                        
                         <h3>
                             WE ARE
                         </h3>
@@ -303,7 +128,6 @@
                         </p>
                     </li>
                     <li>
-                        <div class="ico-box"><img src="./images/ico-pro03.jpg" alt="work"></div>
                         <h3>
                             WORK
                         </h3>
@@ -312,9 +136,7 @@
                         </p>
                     </li>
                     <li>
-                        <div class="ico-box">
-                            <img src="./images/ico-pro01.jpg" alt="blog">
-                        </div>
+                       
                         <h3>
                             BLOG
                         </h3>
@@ -339,7 +161,7 @@
                 work
             </h2>
             <div class="work-list">
-                <ul>
+                <ul class="clearfix">
                     <li>
                         <div class="work-lmg">
                             <img src="./images/img-work01.jpg" alt="달리기">
@@ -451,76 +273,87 @@
     </section>
     <section class="sec diviser">
         <div class="container">
-            <hr>
+            <hr class=" mini-diviser">
         </div>
     </section>
     <section class="sec blog" id="blog">
-        <div class="container">
+        <div class="container clearfix">
             <h2>
                 BLOG
             </h2>
             <div class="blog-list">
-                <ul>
+                <ul class="clearfix">
                     <li>
-                        <div class="blog-img">
-                            <img src="./images/img-blog01.jpg" alt="블로그1">
+                        <div class="li-content">
+                            <div class="blog-img">
+                                <img src="./images/img-blog01.jpg" alt="블로그1">
+                            </div>
+                            <h3>
+                                2021-12-14
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, reiciendis?
+                            </p>
                         </div>
-                        <h3>
-                            2021-12-14
-                        </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, reiciendis?
-                        </p>
                     </li>
                     <li>
-                        <div class="blog-img">
-                            <img src="./images/img-blog02.jpg" alt="블로그2">
+                        <div class="li-content">
+                            <div class="blog-img">
+                                <img src="./images/img-blog02.jpg" alt="블로그2">
+                            </div>
+                            <h3>
+                                2021-12-10
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, reiciendis?
+                            </p>
                         </div>
-                        <h3>
-                            2021-12-10
-                        </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, reiciendis?
-                        </p>
                     </li>
                     <li>
-                        <div class="blog-img">
-                            <img src="./images/img-blog03.jpg" alt="블로그3">
+                        <div class="li-content">
+                            <div class="blog-img">
+                                <img src="./images/img-blog03.jpg" alt="블로그3">
+                            </div>
+                            <h3>
+                                2021-12-02
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, reiciendis?
+                            </p>
                         </div>
-                        <h3>
-                            2021-12-02
-                        </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, reiciendis?
-                        </p>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
     <section class="sec contact" id="contact">
-        <div class="container">
+        <div class="container clearfix">
             <h2>
                 CONTACT
             </h2>
-            <form>
-                <label for="name">
-                    neme
-                </label>
-                <input type="text" name="name" id="name" placeholder="Name">
-                <label for="phone">
-                    phone
-                </label>
-                <input type="text" name="phone" id="phone" placeholder="phone">
-                <label for="Email">
-                    Email Address
-                </label>
-                <input type="text" name="Email" id="Email" placeholder="Email Address">
-                <label for="message">
-                    message
-                </label>
-                <textarea name="message" id="message" placeholder="message"></textarea>
-                <input type="submit" value="SEND MESSAGE">
+            <form class="clearfix">
+                <fieldset>
+                    <label for="name">
+                        neme
+                    </label>
+                    <input type="tel" name="name" id="name" placeholder="Name">
+                    <label for="phone">
+                        phone
+                    </label>
+                    <input type="email" name="phone" id="phone" placeholder="phone">
+                    <label for="Email">
+                        Email Address
+                    </label>
+                    <input type="text" name="Email" id="Email" placeholder="Email Address">
+                </fieldset>    
+                    
+                <fieldset>
+                    <label for="message">
+                        message
+                    </label>
+                    <textarea name="message" id="message" placeholder="message"></textarea>
+                    <input type="submit" value="SEND MESSAGE">
+                </fieldset>
             </form>
 
         </div>
